@@ -42,11 +42,13 @@ local config = {
     options = {
         opt = {
             -- set to true or false etc.
-            relativenumber = true, -- sets vim.opt.relativenumber
+            relativenumber = false, -- sets vim.opt.relativenumber
             number = true, -- sets vim.opt.number
             spell = false, -- sets vim.opt.spell
             signcolumn = "auto", -- sets vim.opt.signcolumn to auto
             wrap = false, -- sets vim.opt.wrap
+            listchars = 'space:.',
+            list = true,
         },
         g = {
             mapleader = " ", -- sets vim.g.mapleader
@@ -143,7 +145,7 @@ local config = {
         formatting = {
             -- control auto formatting on save
             format_on_save = {
-                enabled = true, -- enable or disable format on save globally
+                enabled = false, -- enable or disable format on save globally
                 allow_filetypes = { -- enable format on save for specified filetypes only
                     -- "go",
                 },
